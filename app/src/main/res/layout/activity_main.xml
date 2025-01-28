@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Location Input -->
+    <EditText
+        android:id="@+id/location_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter location (City, State/Province, etc.)"
+        android:padding="8dp"
+        android:inputType="text" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:layout_marginTop="8dp" />
+
+    <!-- Weather Information Section, turn off invisibility -->
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/CityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/weather_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/weather_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/weather_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
